@@ -1,0 +1,12 @@
+version: '3'
+services:
+  projectname-postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: obugs
+      POSTGRES_USER: obugs
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ../projectname_postgres_data:/var/lib/postgresql/data

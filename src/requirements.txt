@@ -1,0 +1,9 @@
+psycopg[binary]
+alembic
+SQLAlchemy
+
+fastapi[all]
+strawberry-graphql
+strawberry-sqlalchemy-mapper
+
+python-jose[pycryptodome]
