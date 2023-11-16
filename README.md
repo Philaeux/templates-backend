@@ -23,7 +23,7 @@ Use the `deploy.sh` script to get the latest version of code and refresh the doc
 
 - Set the database similar to prod using a docker container
 
-```docker compose -f docker-compose-dev.yaml --env-file docker.env up projectname-postgres```
+```docker compose -f docker-compose-dev.yaml --env-file docker.env up postgres```
 
 
 ### Virtual environment
@@ -33,10 +33,10 @@ In `./src/`, set your virtual environment according to your machine:
 #### Windows Python
 
 ```
-python -m venv .env
-.\.env\Scripts\python.exe -m pip install --upgrade pip
-.\.env\Scripts\python.exe -m pip install -r .\requirements.txt
-"$(get-location)" > .\.env\Lib\site-packages\obugs.pth
+python -m venv .wvenv
+.\.wvenv\Scripts\python.exe -m pip install --upgrade pip
+.\.wvenv\Scripts\python.exe -m pip install -r .\requirements.txt
+"$(get-location)" > .\.wvenv\Lib\site-packages\obugs.pth
 ```
 
 #### Unix Python
@@ -50,12 +50,12 @@ $(foreach dir, $(wildcard .venv/lib/*), echo $(shell pwd) > $(dir)/site-packages
 
 ### Run
 
-- Windows: ``.\.env\Scripts\python.exe main.py``
+- Windows: ``.\.wvenv\Scripts\python.exe main.py``
 - Unix: ``.venv/bin/python3 ./main.py``
 
 ### Generate a new database migration
 
-- Windows: ``.\.env\Scripts\alembic.exe revision --autogenerate``
+- Windows: ``.\.wvenv\Scripts\alembic.exe revision --autogenerate``
 - Unix: ``.venv/bin/alembic revision --autogenerate``
 
 More scripts in ``./src/Makefile``
