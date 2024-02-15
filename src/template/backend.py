@@ -5,9 +5,9 @@ from fastapi.requests import Request
 from strawberry.fastapi import GraphQLRouter
 from strawberry_sqlalchemy_mapper import StrawberrySQLAlchemyLoader
 
-from projectname.settings import Settings
-from projectname.database.database import Database
-from projectname.graphql.schema import schema
+from template.settings import Settings
+from template.database.database import Database
+from template.graphql.schema import schema
 
 # App
 settings = Settings()

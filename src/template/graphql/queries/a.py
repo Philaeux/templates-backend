@@ -1,6 +1,6 @@
 import strawberry
 
-from projectname.graphql.types import ApiError
+from template.graphql.types.generated import ApiError
 
 
 @strawberry.type

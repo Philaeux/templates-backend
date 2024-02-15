@@ -6,10 +6,10 @@ strawberry_sqlalchemy_mapper = StrawberrySQLAlchemyMapper()
 
 
 # How to add an orm mapping to strawberry type
-#from obugs.database.entry import Entry as EntryEntity
-#@strawberry_sqlalchemy_mapper.type(EntryEntity)
-#class Entry:
-#    pass
+from template.database.a import A as AEntity
+@strawberry_sqlalchemy_mapper.type(AEntity)
+class A:
+    pass
 
 
 # OTHERS

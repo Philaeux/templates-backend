@@ -3,11 +3,10 @@ from pathlib import Path
 
 from alembic import command
 from alembic.config import Config
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from projectname.database.base import Base
+from template.database.base import Base
 
 
 class Database:

@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "template-backend"
+version = "1.0.0"
+description = "Backend of the website Template."
+authors = ["Firstname 'Nickname' SURNAME <email>"]
+license = "CC BY-NC-SA 4.0"
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg = {extras = ["binary"], version = "^3.1.12"}
+alembic = "^1.13.1"
+SQLAlchemy = "^2.0.25"
+fastapi = {extras = ["all"], version = "^0.109.1"}
+strawberry-graphql = "^0.219.1"
+strawberry-sqlalchemy-mapper = "0.3.1"
+python-jose = {extras = ["pycryptodome"], version = "^3.3.0"}
+requests = "^2.31.0"
+uvicorn = "^0.25.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.2.6"
+sphinx-rtd-theme = "^2.0.0"
+sphinxcontrib-mermaid = "^0.9.2"
+enum-tools = {extras = ["sphinx"], version = "^0.11.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

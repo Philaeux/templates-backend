@@ -1,10 +1,8 @@
 import strawberry
 
-from projectname.graphql.mutations.a import MutationA
-
-from projectname.graphql.queries.a import QueryA
-
-from projectname.graphql.types import strawberry_sqlalchemy_mapper
+from template.graphql.mutations.a import MutationA
+from template.graphql.queries.a import QueryA
+from template.graphql.types import strawberry_sqlalchemy_mapper
 
 
 @strawberry.type

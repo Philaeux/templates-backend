@@ -1,7 +1,9 @@
 version: '3'
 services:
-  postgres:
+  db:
     image: postgres:latest
+    container_name: template-backend-dev-db
+    restart: always
     ports:
       - "5432:5432"
     environment:
@@ -9,4 +11,4 @@ services:
       POSTGRES_USER: obugs
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - ../projectname_postgres_data:/var/lib/postgresql/data
+      - ../../obugs_postgres_data:/var/lib/postgresql/data
