@@ -1,3 +1,5 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.requests import Request
@@ -11,7 +13,15 @@ from template.graphql.schema import schema
 
 # App
 settings = Settings()
-app = FastAPI()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Add startup functions here
+    yield
+    # Add shutdown functions here
+
+app = FastAPI(lifespan=lifespan)
 
 # Database
 database = Database(uri=settings.database_uri, check_migrations=True)

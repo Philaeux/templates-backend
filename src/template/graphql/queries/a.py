@@ -1,4 +1,5 @@
 import strawberry
+from strawberry.types import Info
 
 from template.graphql.types.generated import ApiError
 
@@ -7,7 +8,7 @@ from template.graphql.types.generated import ApiError
 class QueryA:
 
     @strawberry.mutation
-    async def qa(self, info) -> ApiError:
+    async def qa(self, info: Info) -> ApiError:
 
         # Typical database access
         # with info.context['session_factory'](expire_on_commit=False) as session:

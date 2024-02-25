@@ -40,10 +40,13 @@ To run the code, using poetry::
     python -m pip install pipx
     python -m pipx install poetry
     # Install dependencies
-    poetry install --with docs --no-root
+    poetry install --with docs,tests
     # Generate documentation
     cd docs
     poetry run sphinx-build . _build
+    # Run tests
+    cd src
+    poetry run pytest
     # Get information about the virtual environment (to setup in your ide)
     poetry env info
     # Run

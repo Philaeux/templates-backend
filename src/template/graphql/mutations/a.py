@@ -1,4 +1,5 @@
 import strawberry
+from strawberry.types import Info
 
 from template.graphql.types.generated import ApiError
 
@@ -7,7 +8,7 @@ from template.graphql.types.generated import ApiError
 class MutationA:
 
     @strawberry.mutation
-    async def ma(self, info) -> ApiError:
+    async def ma(self, info: Info) -> ApiError:
         # Typical user check
         # current_user = check_user(info.context["settings"].jwt_secret_key,
         #                           info.context["request"].headers.get("Authorization"))
