@@ -26,7 +26,7 @@ class Database:
             cls._instance = object.__new__(cls)
         return cls._instance
 
-    def __init__(self, uri='', check_migrations=False):
+    def __init__(self, uri='', auto_migrate=False):
         """Defines all necessary ressources (URI & engine) and create database if necessary."""
 
         dir_uri = os.path.dirname(__file__)
@@ -38,7 +38,7 @@ class Database:
         self.session_factory = sessionmaker(self.engine)
 
         # Upgrade application to heads
-        if check_migrations:
+        if auto_migrate:
             alembic = Path(dir_uri) / ".." / ".." / "alembic.ini"
             migrations = Path(dir_uri) / ".." / "alembic"
             alembic_cfg = Config(alembic)

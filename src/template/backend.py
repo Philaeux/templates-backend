@@ -24,7 +24,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 # Database
-database = Database(uri=settings.database_uri, check_migrations=True)
+database = Database(uri=settings.database_uri, auto_migrate=True)
 
 # CORS
 app.add_middleware(

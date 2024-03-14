@@ -3,8 +3,9 @@ from sqlalchemy.orm import Mapped, mapped_column
 from template.database.base import Base
 
 
-class User(Base):
+class A(Base):
     """User ORM example"""
-    __tablename__ = "template_user"
+    # Don't name your table "users" or postgresql is not gonna be happy
+    __tablename__ = "template_users"
 
     id: Mapped[int] = mapped_column(primary_key=True, index=True)

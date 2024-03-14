@@ -1,18 +1,18 @@
 import strawberry
 
-from template.graphql.mutations.a import MutationA
-from template.graphql.queries.a import QueryA
+from template.graphql.mutations.a import ma
+from template.graphql.queries.a import qa
 from template.graphql.types import strawberry_sqlalchemy_mapper
 
 
 @strawberry.type
-class Mutation(MutationA):
-    pass
+class Mutation:
+    ma = strawberry.mutation(resolver=ma)
 
 
 @strawberry.type
-class Query(QueryA):
-    pass
+class Query:
+    qa = strawberry.field(resolver=qa)
 
 
 strawberry_sqlalchemy_mapper.finalize()
