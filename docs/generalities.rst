@@ -31,7 +31,7 @@ Configuration
 
 The backend use configuration files.
 
-- Create ``./docker.env`` similar to ``./docker.example.env``. This file define database passwords for deployment or developement usign docker database. It's possible to skip this file if you prefer using a SQLite database in development.
+- Create ``./docker/docker.env`` similar to ``./docker/docker.example.env``. This file define database passwords for deployment or developement usign docker database. It's possible to skip this file if you prefer using a SQLite database in development.
 - Create ``./src/settings.ini`` similar to ``./src/settings.example.ini``. This file defines application settings: debug mode, database access, key secrets... In development, and with SQLite, it's possible to skip the file entirely.
 
 Run

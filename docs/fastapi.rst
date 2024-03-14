@@ -26,7 +26,7 @@ Schema defined for the GraphQL endpoint:
 Types Input & Output
 ^^^^^^^^^^^^^^^^^^^^^^
 
-I recommend creating files to store Input and Output types of the GraphQL endpoints, in files like ``src/graphql/types/a.py``.
+I recommend creating files to store Input and Output types of the GraphQL endpoints, in files like ``src/template/graphql/types/a.py``.
 
 These types are used:
 
