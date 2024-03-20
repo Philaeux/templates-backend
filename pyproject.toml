@@ -16,7 +16,7 @@ strawberry-graphql = "^0.220.0"
 strawberry-sqlalchemy-mapper = "==0.3.1"
 python-jose = {extras = ["pycryptodome"], version = "^3.3.0"}
 requests = "^2.31.0"
-uvicorn = "^0.28.0"
+uvicorn = "^0.29.0"
 
 [tool.poetry.group.docs]
 optional = true
