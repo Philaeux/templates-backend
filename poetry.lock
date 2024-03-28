@@ -1939,6 +1939,23 @@ standalone = ["Sphinx (>=5)"]
 test = ["pytest"]
 
 [[package]]
+name = "sqlakeyset"
+version = "2.0.1708907391"
+description = "offset-free paging for sqlalchemy"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "sqlakeyset-2.0.1708907391-py3-none-any.whl", hash = "sha256:3eb6bd0ccd599ab44aa5c0b0f9a710d5c4d24813c7053adc9398bf539b68859e"},
+    {file = "sqlakeyset-2.0.1708907391.tar.gz", hash = "sha256:376af65f0faecea6e19b16dd5dd047439d4314c5ae1d85d8a46bbb1ee44f32e3"},
+]
+
+[package.dependencies]
+packaging = ">=20.0"
+python-dateutil = "*"
+sqlalchemy = ">=1.3.11"
+typing_extensions = ">=4,<5"
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.28"
 description = "Database Abstraction Library"
@@ -2079,18 +2096,19 @@ starlite = ["starlite (>=1.48.0)"]
 
 [[package]]
 name = "strawberry-sqlalchemy-mapper"
-version = "0.3.1"
+version = "0.4.2"
 description = "A library for autogenerating Strawberry GraphQL types from SQLAlchemy models."
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "strawberry_sqlalchemy_mapper-0.3.1-py3-none-any.whl", hash = "sha256:f591792b03a7dcb0de92df5d74c13a747dd763d5d47331a96ddf08309847dcea"},
-    {file = "strawberry_sqlalchemy_mapper-0.3.1.tar.gz", hash = "sha256:d26e2d2793c18b6dbfd127e0ce1a3dcd6b75e4de152dcd0aae1bd45cd36a9a0e"},
+    {file = "strawberry_sqlalchemy_mapper-0.4.2-py3-none-any.whl", hash = "sha256:e8375d1173d8604117ea6e8f0212201000815d9150cf475e05f6bc658e7ecc10"},
+    {file = "strawberry_sqlalchemy_mapper-0.4.2.tar.gz", hash = "sha256:7cc7a676b363eafdd14c5aaf4d9b17af440d386919bad7caa996971543d0f029"},
 ]
 
 [package.dependencies]
 greenlet = {version = ">=3.0.0rc1", markers = "python_version >= \"3.12\""}
 sentinel = ">=0.3,<1.1"
+sqlakeyset = ">=2.0.1695177552,<3.0.0"
 sqlalchemy = {version = ">=1.4", extras = ["asyncio"]}
 strawberry-graphql = ">=0.95"
 
@@ -2472,4 +2490,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "68fd7ddabfe7209680bafec9da49cd9763ec30324553afabd8ee41511f98f453"
+content-hash = "9c8f79f0a897d5ea3aeb5be9ea0ee720f678b30a0fb1b9909b819498b7854a52"
