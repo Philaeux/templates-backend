@@ -12,8 +12,8 @@ Template for a HTTP Web Backend using the following technologies:
 * `Strawberry <https://strawberry.rocks/>`_ as GraphQL API Framework.
 * `FastAPI <https://fastapi.tiangolo.com/>`_ as Asynchronous Web Framework.
 * `Uvicorn <https://www.uvicorn.org/>`_ as Asynchronous Web Server.
-* `Pytest <https://docs.pytest.org/en/8.0.x/>_` as Test Framework.
-* `Sphinx <https://www.sphinx-doc.org/en/master/>_` to generate documentation from codebase.
+* `Pytest <https://docs.pytest.org/en/8.0.x/>`_ as Test Framework.
+* `Sphinx <https://www.sphinx-doc.org/en/master/>`_ to generate documentation from codebase.
 
 To use this template, rename all mentions of "template" with the name of your project.
 

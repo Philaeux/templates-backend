@@ -10,7 +10,7 @@ It's possible to create periodic tasks. Use this function decorator:
 
 And then call this function in the lifecycle function:
 
-.. autofunction:: template.backend.lifecycle
+.. autofunction:: template.backend.lifespan
 
 GraphQL
 --------

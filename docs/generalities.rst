@@ -5,6 +5,7 @@ Design
 --------
 
 .. mermaid::
+
     sequenceDiagram
         participant Client
         participant FastAPI
@@ -48,7 +49,7 @@ If you set some script, run it the same way::
 Deploy
 --------
 
-- Stop current service::
+- Stop current service (Optional)::
 
     cd docker
     docker compose --env-file docker.env down
