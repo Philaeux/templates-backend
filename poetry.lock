@@ -2123,17 +2123,17 @@ full = ["httpx (>=0.22.0)", "itsdangerous", "jinja2", "python-multipart (>=0.0.7
 
 [[package]]
 name = "strawberry-graphql"
-version = "0.229.1"
+version = "0.246.0"
 description = "A library for creating GraphQL APIs"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "strawberry_graphql-0.229.1-py3-none-any.whl", hash = "sha256:f2dce0ce74669db94c1a69e85c272629a84da25d6cc4672b5ad9acf625e3069a"},
-    {file = "strawberry_graphql-0.229.1.tar.gz", hash = "sha256:ec08f4f1da8218903cb8e0d8bb07ed0cac3a149d03bdde298dd79fc12d8d714f"},
+    {file = "strawberry_graphql-0.246.0-py3-none-any.whl", hash = "sha256:1d69459021a34b5487f3223476a8b27c7c07cedd1a9dddff3932d31b36601ba1"},
+    {file = "strawberry_graphql-0.246.0.tar.gz", hash = "sha256:4eb055a68fedf25e26fd7f20a780a5b8fcc169c8e9d098de67e3efec3b8707a2"},
 ]
 
 [package.dependencies]
-graphql-core = ">=3.2.0,<3.3.0"
+graphql-core = ">=3.2.0,<3.4.0"
 python-dateutil = ">=2.7.0,<3.0.0"
 typing-extensions = ">=4.5.0"
 
@@ -2154,7 +2154,6 @@ pydantic = ["pydantic (>1.6.1)"]
 pyinstrument = ["pyinstrument (>=4.0.0)"]
 quart = ["quart (>=0.19.3)"]
 sanic = ["sanic (>=20.12.2)"]
-starlite = ["starlite (>=1.48.0)"]
 
 [[package]]
 name = "strawberry-sqlalchemy-mapper"
@@ -2568,4 +2567,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "a485b2cc6f2a7e2a63e37100df1702e788a4b901fc051199c3833dcbf1f87512"
+content-hash = "52bd90e3cb3cfb2c79bf06e55425ff785f415c53319b30038e605f348db8ea75"
